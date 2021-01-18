@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/travelClassID"
+            android:title="Travel class - Economy class" />
+        <item
+            android:id="@+id/MaxPriceID"
+            android:title="Max price - 1000" />
+        <item
+            android:id="@+id/changeDepartDay"
+            android:title="Depart day - " />
+        <item
+            android:id="@+id/changeArrivalDay"
+            android:title="Arrival day - " />
+        <item
+            android:id="@+id/arrive_byID"
+            android:title="Arrive by - Default" />
+        <item
+            android:id="@+id/returnID"
+            android:title="Return by - Default" />
+        <item
+            android:id="@+id/currencyID"
+            android:title="Currency - EUR" />
+        <item
+            android:id="@+id/Number_of_resultsID"
+            android:title="Number of results - 10" />
+    </group>
+
+    <item android:title=" ">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_help"-->
+                <!--android:title="Share" />-->
+            <item
+                android:id="@+id/nav_search"
+                android:title="Search with new values" />
+        </menu>
+    </item>
+
+</menu>

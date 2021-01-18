@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/deuteri">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/AdultsSpinnerID"
+            android:layout_below="@+id/ToID"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:hint="Depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DepartID"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/radioButtonOneWayID"
+            android:layout_alignLeft="@+id/radioButtonOneWayID"
+            android:layout_alignStart="@+id/radioButtonOneWayID"
+            android:layout_toStartOf="@+id/radioButtonRoundTripID"
+            android:layout_alignRight="@+id/AdultsSpinnerID"
+            android:layout_alignEnd="@+id/AdultsSpinnerID" />
+
+        <!--<com.prolificinteractive.materialcalendarview.MaterialCalendarView-->
+            <!--android:id="@+id/calendarView"-->
+            <!--android:layout_width="270dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--app:mcv_showOtherDates="all"-->
+            <!--app:mcv_selectionColor="#00F"-->
+            <!--android:layout_below="@+id/ArivalID"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ChildrenSpinnerID"
+            android:layout_alignEnd="@+id/ChildrenSpinnerID"
+            android:id="@+id/infantsSpinnerID"
+            android:layout_alignLeft="@+id/ChildrenSpinnerID"
+            android:layout_alignStart="@+id/ChildrenSpinnerID"
+            android:layout_alignTop="@+id/infantsID"
+            android:layout_alignBottom="@+id/infantsID" />
+
+        <TextView
+            android:text="Depart..."
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DepartID"
+            android:layout_alignLeft="@+id/DepartID"
+            android:layout_alignStart="@+id/DepartID"
+            android:id="@+id/dateDepartID"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_toStartOf="@+id/infantsID"
+            android:layout_alignRight="@+id/DepartID"
+            android:layout_alignEnd="@+id/DepartID" />
+
+        <TextView
+            android:text="Adults  \ntravelers"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/AdultsSpinnerID"
+            android:layout_toLeftOf="@+id/searchFlightsID"
+            android:layout_toStartOf="@+id/searchFlightsID" />
+
+        <RadioButton
+            android:text="One Way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOneWayID"
+            android:checked="true"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/infantsID"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3" />
+
+        <TextView
+            android:text="Children travelers"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_alignTop="@+id/AdultsSpinnerID"
+            android:layout_above="@+id/infantsSpinnerID"
+            android:layout_alignRight="@+id/infantsID"
+            android:layout_alignEnd="@+id/infantsID"
+            android:layout_alignLeft="@+id/infantsID"
+            android:layout_alignStart="@+id/infantsID" />
+
+        <RadioButton
+            android:text="Round Trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonRoundTripID"
+            android:layout_above="@+id/DepartID"
+            android:layout_alignRight="@+id/ToID"
+            android:layout_alignEnd="@+id/ToID" />
+
+        <TextView
+            android:hint="Arival"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ArivalID"
+            android:visibility="invisible"
+            android:layout_alignBaseline="@+id/DepartID"
+            android:layout_alignBottom="@+id/DepartID"
+            android:layout_alignRight="@+id/infantsSpinnerID"
+            android:layout_alignEnd="@+id/infantsSpinnerID"
+            android:layout_toEndOf="@+id/dateDepartID"
+            android:layout_alignLeft="@+id/radioButtonRoundTripID"
+            android:layout_alignStart="@+id/radioButtonRoundTripID" />
+
+        <TextView
+            android:text="Arrival..."
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateArrivalID"
+            android:visibility="invisible"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/ArivalID"
+            android:layout_alignRight="@+id/ArivalID"
+            android:layout_alignEnd="@+id/ArivalID"
+            android:layout_alignLeft="@+id/radioButtonRoundTripID"
+            android:layout_alignStart="@+id/radioButtonRoundTripID" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/ChildrenSpinnerID"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/searchFlightsID"
+            android:layout_toEndOf="@+id/searchFlightsID"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_above="@+id/infantsSpinnerID" />
+
+        <AutoCompleteTextView
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="City or airport..."
+            android:ems="10"
+            android:id="@+id/ToID"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/FromID"
+            android:layout_alignLeft="@+id/FromID"
+            android:layout_alignStart="@+id/FromID"></AutoCompleteTextView>
+
+        <TextView
+            android:text="To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FromID"
+            android:layout_alignLeft="@+id/ToID"
+            android:layout_alignStart="@+id/ToID"
+            android:layout_marginTop="17dp"
+            android:id="@+id/textView22" />
+
+        <AutoCompleteTextView
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="City or airport..."
+            android:ems="10"
+            android:id="@+id/FromID"
+            android:layout_below="@+id/textView27"
+            android:layout_centerHorizontal="true"> </AutoCompleteTextView>
+
+        <TextView
+            android:text="From"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/FromID"
+            android:layout_alignStart="@+id/FromID"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:text="Search flights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchFlightsID"
+            android:layout_below="@+id/dateDepartID"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Infants \ntravelers"
+
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/infantsID"
+            android:layout_alignLeft="@+id/radioButtonRoundTripID"
+            android:layout_alignStart="@+id/radioButtonRoundTripID"
+            android:layout_below="@+id/textView3" />
+
+
+    </RelativeLayout>
+</ScrollView>

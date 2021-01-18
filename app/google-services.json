@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "984490853080",
+    "firebase_url": "https://air-flight.firebaseio.com",
+    "project_id": "air-flight",
+    "storage_bucket": "air-flight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984490853080:android:35881c60d0c19a4b",
+        "android_client_info": {
+          "package_name": "android.uom.gr.airflight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984490853080-ld23vv40r8div9e1d5b02escnbpq8ml7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG9m7CUlnVCrvhwSth0Ya0rMzyDWbO5Xs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

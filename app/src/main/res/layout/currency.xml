@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/currencyLayoutID">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/currencyID"
+        android:text="Currency" />
+
+    <RadioButton
+        android:text="GBP,Pound sterling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EURID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:id="@+id/GBPID" />
+
+    <RadioButton
+        android:text="USD,United States dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/USDID"
+        android:layout_below="@+id/GBPID"
+        android:layout_alignLeft="@+id/GBPID"
+        android:layout_alignStart="@+id/GBPID" />
+
+    <RadioButton
+        android:text="CHF,Swiss franc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CHFID"
+        android:layout_alignBottom="@+id/USDID"
+        android:layout_toLeftOf="@+id/USDID"
+        android:layout_toStartOf="@+id/USDID" />
+
+    <RadioButton
+        android:text="EUR,Euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/EURID"
+        android:layout_below="@+id/currencyID"
+        android:layout_alignLeft="@+id/CHFID"
+        android:layout_alignStart="@+id/CHFID" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/USDID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/okID" />
+</RelativeLayout>

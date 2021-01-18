@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:id="@+id/departFlightLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Airport"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeDepartGoID"
+            android:layout_alignLeft="@+id/timeDepartGoID"
+            android:layout_alignStart="@+id/timeDepartGoID"
+            android:id="@+id/airportDepartGoID" />
+
+        <TextView
+            android:text="1000  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceToGoID"
+            android:visibility="invisible"
+            android:layout_above="@+id/airportDepartGoID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_alignTop="@+id/timeDepartGoID" />
+
+        <TextView
+            android:text="E "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/curToGoID"
+            android:visibility="invisible"
+            android:layout_alignBaseline="@+id/priceToGoID"
+            android:layout_alignBottom="@+id/priceToGoID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_below="@+id/airportDepartGoID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/view7"
+            android:layout_alignEnd="@+id/view7"
+            android:layout_width="215dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrowright"
+            android:id="@+id/imageArrowGoID"
+            android:layout_alignTop="@+id/timeDepartGoID"
+            android:layout_toRightOf="@+id/airportDepartGoID"
+            android:layout_toEndOf="@+id/airportDepartGoID"
+            android:layout_alignBottom="@+id/imageDepartGoID" />
+
+        <TextView
+            android:text="TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/priceToGoID"
+            android:layout_toRightOf="@+id/imageArrowGoID"
+            android:layout_toEndOf="@+id/imageArrowGoID"
+            android:id="@+id/timeArivalGoID" />
+
+        <TextView
+            android:text="Airport"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/airportArivalGoID"
+            android:layout_below="@+id/timeArivalGoID"
+            android:layout_toRightOf="@+id/imageArrowGoID"
+            android:layout_toEndOf="@+id/imageArrowGoID" />
+
+        <TextView
+            android:text="TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeDepartGoID"
+            android:layout_alignTop="@+id/imageDepartGoID"
+            android:layout_toEndOf="@+id/imageDepartGoID"
+            android:layout_toRightOf="@+id/imageDepartGoID" />
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageArivalGoID"
+            android:layout_toEndOf="@+id/imageArivalGoID"
+            android:layout_alignBottom="@+id/imageArrowGoID"
+            android:layout_width="1dp"
+            android:layout_height="270dp"
+            android:id="@+id/v" />
+
+        <TextView
+            android:text="AirLine"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/airlinesGoID"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/imageArrowGoID"
+            android:layout_alignRight="@+id/timeDepartGoID"
+            android:layout_alignEnd="@+id/timeDepartGoID" />
+
+        <TextView
+            android:text="05:23"
+            android:layout_width="wrap_content"
+            android:textSize="9sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/flightTimeGoID"
+            android:layout_toLeftOf="@+id/imageArivalGoID"
+            android:layout_toRightOf="@+id/airlinesGoID"
+            android:layout_toEndOf="@+id/airlinesGoID"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/depart"
+            android:id="@+id/imageDepartGoID"
+            android:layout_below="@+id/airlinesGoID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arival"
+            android:id="@+id/imageArivalGoID"
+            android:layout_below="@+id/flightTimeGoID"
+            android:layout_toRightOf="@+id/airportArivalGoID"
+            android:layout_toEndOf="@+id/airportArivalGoID" />
+
+        <!--<TextView-->
+            <!--android:text="hours"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/timeArivalGoID"-->
+            <!--android:id="@+id/textView6"-->
+            <!--android:visibility="invisible"-->
+            <!--android:layout_toLeftOf="@+id/imageArivalGoID"-->
+            <!--android:layout_toRightOf="@+id/imageArrowGoID"-->
+            <!--android:layout_toEndOf="@+id/imageArrowGoID" />-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/returnFlightLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view2"
+        android:layout_toLeftOf="@+id/airportDepartGoID"
+        android:layout_toStartOf="@+id/airportDepartGoID">
+
+        <TextView
+        android:text="Airport"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeDepartEndID"
+        android:layout_alignLeft="@+id/timeDepartEndID"
+        android:layout_alignStart="@+id/timeDepartEndID"
+        android:id="@+id/airportDepartEndID" />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrowright"
+        android:id="@+id/imageArrowEndID"
+        android:layout_alignTop="@+id/timeDepartEndID"
+        android:layout_toRightOf="@+id/airportDepartEndID"
+        android:layout_toEndOf="@+id/airportDepartEndID"
+        android:layout_alignBottom="@+id/imageDepartEndID" />
+
+        <TextView
+        android:text="TIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/timeDepartEndID"
+            android:layout_alignTop="@+id/imageDepartEndID"
+            android:layout_toEndOf="@+id/imageDepartEndID"
+            android:layout_toRightOf="@+id/imageDepartEndID" />
+
+        <View
+        android:layout_width="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_toEndOf="@+id/imageArivalEndID"
+            android:layout_height="250dp"
+            android:layout_alignBottom="@+id/airportArivalEndID"
+            android:layout_toRightOf="@+id/imageArivalEndID" />
+
+        <TextView
+        android:text="E "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curToEndID"
+            android:layout_alignBaseline="@+id/priceToEndID"
+            android:layout_alignBottom="@+id/priceToEndID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+        android:text="1000  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceToEndID"
+            android:layout_alignBottom="@+id/imageArivalEndID"
+            android:layout_toLeftOf="@+id/curToEndID"
+            android:layout_toStartOf="@+id/curToEndID" />
+
+        <TextView
+            android:text="22:39"
+            android:textSize="9sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flightTimeEndID"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageArivalEndID"
+            android:layout_toRightOf="@+id/AirlinesEndID"
+            android:layout_toEndOf="@+id/AirlinesEndID" />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arival"
+        android:id="@+id/imageArivalEndID"
+            android:layout_below="@+id/flightTimeEndID"
+            android:layout_toRightOf="@+id/airportArivalEndID"
+            android:layout_toEndOf="@+id/airportArivalEndID" />
+
+        <TextView
+            android:text="AirLine"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AirlinesEndID"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/timeDepartEndID"
+            android:layout_alignEnd="@+id/timeDepartEndID" />
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/depart"
+        android:id="@+id/imageDepartEndID"
+            android:layout_below="@+id/AirlinesEndID"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+        android:text="Airport"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/airportArivalEndID"
+            android:layout_toRightOf="@+id/imageArrowEndID"
+            android:layout_toEndOf="@+id/imageArrowEndID"
+            android:layout_below="@+id/timeArivalEndID"
+            android:layout_alignBottom="@+id/airportDepartEndID" />
+
+        <TextView
+        android:text="TIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/timeArivalEndID"
+            android:layout_alignTop="@+id/imageArrowEndID"
+            android:layout_toRightOf="@+id/imageArrowEndID"
+            android:layout_toEndOf="@+id/imageArrowEndID" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

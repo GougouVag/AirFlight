@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/travelClassDialog">
+
+    <TextView
+        android:text="RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="505dp"
+        android:layout_marginStart="505dp"
+        android:layout_marginBottom="128dp"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:text="Travel class"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/travelclass"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="Economy class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/economyClassID"
+        android:layout_alignBaseline="@+id/premiumEconomyID"
+        android:layout_alignBottom="@+id/premiumEconomyID"
+        android:layout_alignLeft="@+id/firstClassID"
+        android:layout_alignStart="@+id/firstClassID" />
+
+    <RadioButton
+        android:text="Business class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/buissnesClassID"
+        android:layout_below="@+id/travelclass"
+        android:layout_alignLeft="@+id/travelclass"
+        android:layout_alignStart="@+id/travelclass" />
+
+    <RadioButton
+        android:text="Premium economy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/premiumEconomyID"
+        android:layout_below="@+id/buissnesClassID"
+        android:layout_alignLeft="@+id/buissnesClassID"
+        android:layout_alignStart="@+id/buissnesClassID" />
+
+    <RadioButton
+        android:text="First class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstClassID"
+        android:layout_above="@+id/premiumEconomyID"
+        android:layout_toRightOf="@+id/premiumEconomyID"
+        android:layout_toEndOf="@+id/premiumEconomyID" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/okTravelClassID"
+        android:layout_below="@+id/economyClassID"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

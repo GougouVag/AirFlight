@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/arrivalCalendar">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarArrival" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/okArrivalID"
+        android:layout_marginRight="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_below="@+id/calendarArrival"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelArrivalID"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_below="@+id/calendarArrival"
+        android:layout_toLeftOf="@+id/okArrivalID"
+        android:layout_toStartOf="@+id/okArrivalID" />
+</RelativeLayout>

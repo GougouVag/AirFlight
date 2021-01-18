@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flifhtMoreDetailsID"
+    >
+
+    <TextView
+        android:text="Origin airport:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/OriginAirportTextViewGoID"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:text="SKG"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/OriginAirportTextViewGoID"
+        android:layout_toRightOf="@+id/OriginAirportTextViewGoID"
+        android:layout_toEndOf="@+id/OriginAirportTextViewGoID"
+        android:id="@+id/originAirportGoID" />
+
+    <TextView
+        android:text="Aegean"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DestinationAirportTextViewGoID"
+        android:layout_toRightOf="@+id/OperatingAirlineTextViewID"
+        android:layout_toEndOf="@+id/OperatingAirlineTextViewID"
+        android:id="@+id/operatingAirlineGoID" />
+
+    <TextView
+        android:text="Flight number:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OperatingAirlineTextViewID"
+        android:layout_alignLeft="@+id/OperatingAirlineTextViewID"
+        android:layout_alignStart="@+id/OperatingAirlineTextViewID"
+        android:id="@+id/FlightNumberTextViewGoID" />
+
+    <TextView
+        android:text="1368"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/FlightNumberTextViewGoID"
+        android:layout_toRightOf="@+id/FlightNumberTextViewGoID"
+        android:layout_toEndOf="@+id/FlightNumberTextViewGoID"
+        android:id="@+id/FlightNumberGoId" />
+
+    <TextView
+        android:text="Operating airline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OperatingAirlineTextViewID"
+        android:layout_below="@+id/OriginAirportTextViewGoID"
+        android:layout_alignLeft="@+id/OriginAirportTextViewGoID"
+        android:layout_alignStart="@+id/OriginAirportTextViewGoID" />
+
+    <TextView
+        android:text="Aircraft:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/FlightNumberGoId"
+        android:layout_toRightOf="@+id/operatingAirlineGoID"
+        android:layout_toEndOf="@+id/operatingAirlineGoID"
+        android:id="@+id/AircraftTextViewGoID" />
+
+    <TextView
+        android:text="738"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AircraftTextViewGoID"
+        android:layout_toRightOf="@+id/AircraftTextViewGoID"
+        android:layout_toEndOf="@+id/AircraftTextViewGoID"
+        android:id="@+id/aircraftGoID"
+        android:layout_alignTop="@+id/AircraftTextViewGoID" />
+
+    <TextView
+        android:text="ECONOMY"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TravelClassTextViewGoID"
+        android:layout_toRightOf="@+id/TravelClassTextViewGoID"
+        android:layout_toEndOf="@+id/TravelClassTextViewGoID"
+        android:id="@+id/ECONOMYGOID" />
+
+    <TextView
+        android:text="Booking code:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TravelClassTextViewGoID"
+        android:layout_alignLeft="@+id/TravelClassTextViewGoID"
+        android:layout_alignStart="@+id/TravelClassTextViewGoID"
+        android:id="@+id/bookingCodeTextViewGoID" />
+
+    <TextView
+        android:text="R"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bookingCodeTextViewGoID"
+        android:layout_toRightOf="@+id/bookingCodeTextViewGoID"
+        android:layout_toEndOf="@+id/bookingCodeTextViewGoID"
+        android:id="@+id/bookingCodeGoId" />
+
+    <TextView
+        android:text="More details fro this flight"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView39"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelID"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/AircraftTextViewGoID"
+        android:layout_toLeftOf="@+id/AircraftTextViewGoID" />
+
+
+    <TextView
+        android:text="Travel class:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TravelClassTextViewGoID"
+        android:layout_below="@+id/BookingInfoTextViewGoID"
+        android:layout_alignLeft="@+id/BookingInfoTextViewGoID"
+        android:layout_alignStart="@+id/BookingInfoTextViewGoID" />
+
+    <TextView
+        android:text="Booking info:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BookingInfoTextViewGoID"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/FlightNumberTextViewGoID"
+        android:layout_alignLeft="@+id/FlightNumberTextViewGoID"
+        android:layout_alignStart="@+id/FlightNumberTextViewGoID" />
+
+    <TextView
+        android:text="Outbound"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView39"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:text="Check out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkOutID"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/ECONOMYGOID"
+        android:layout_toRightOf="@+id/ECONOMYGOID" />
+
+    <TextView
+        android:text="Fare:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/fareID" />
+
+    <TextView
+        android:text="150.7"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelID"
+        android:layout_toRightOf="@+id/textView61"
+        android:layout_toEndOf="@+id/textView61"
+        android:id="@+id/priceID" />
+
+    <TextView
+        android:text="E"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelID"
+        android:layout_toRightOf="@+id/priceID"
+        android:layout_toEndOf="@+id/priceID"
+        android:id="@+id/curID" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bookingCodeTextViewGoID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/fareID"
+        android:id="@+id/inboundLayoutID">
+
+        <TextView
+            android:text="Origin airport:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:id="@+id/textView15"
+            android:layout_below="@+id/textView10"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10" />
+
+        <TextView
+            android:text="SKG"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_toRightOf="@+id/textView15"
+            android:layout_toEndOf="@+id/textView15"
+            android:id="@+id/originAirportEndID" />
+
+        <TextView
+            android:text="Aegean"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_toRightOf="@+id/textView23"
+            android:layout_toEndOf="@+id/textView23"
+            android:id="@+id/operatingAirlineEndID" />
+
+        <TextView
+            android:text="Flight number:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView23"
+            android:layout_alignLeft="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:id="@+id/textView25" />
+
+        <TextView
+            android:text="1368"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView25"
+            android:layout_toRightOf="@+id/textView25"
+            android:layout_toEndOf="@+id/textView25"
+            android:id="@+id/FlightNumberEndId" />
+
+        <TextView
+            android:text="Operating airline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:layout_below="@+id/textView15"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15" />
+
+        <TextView
+            android:text="Destination airport:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:layout_alignBaseline="@+id/originAirportEndID"
+            android:layout_alignBottom="@+id/originAirportEndID"
+            android:layout_toRightOf="@+id/FlightNumberEndId"
+            android:layout_toEndOf="@+id/FlightNumberEndId" />
+
+        <TextView
+            android:text="Aircraft:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/FlightNumberEndId"
+            android:layout_toRightOf="@+id/operatingAirlineEndID"
+            android:layout_toEndOf="@+id/operatingAirlineEndID"
+            android:id="@+id/textView28" />
+
+        <TextView
+            android:text="738"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView28"
+            android:layout_toRightOf="@+id/textView28"
+            android:layout_toEndOf="@+id/textView28"
+            android:id="@+id/aircraftEndID" />
+
+        <TextView
+            android:text="ECONOMY"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:layout_toEndOf="@+id/textView31"
+            android:id="@+id/ECONOMYENDID" />
+
+        <TextView
+            android:text="19"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView34"
+            android:id="@+id/seatsRemainingEndID"
+            android:layout_alignBottom="@+id/textView34"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Booking code:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView31"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:id="@+id/textView36" />
+
+        <TextView
+            android:text="R"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView36"
+            android:layout_toRightOf="@+id/textView36"
+            android:layout_toEndOf="@+id/textView36"
+            android:id="@+id/bookingCodeEndId" />
+
+        <TextView
+            android:text="ATH"
+            android:textColor="#3B5998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/destinationAirportEndID"
+            android:layout_alignBaseline="@+id/textView21"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_toRightOf="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21" />
+
+        <TextView
+            android:text="Inbound"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/textView10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Booking info:"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView30"
+            android:layout_below="@+id/textView25"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Travel class:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView31"
+            android:layout_below="@+id/textView30"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Seats remaining:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView34"
+            android:layout_alignBaseline="@+id/ECONOMYENDID"
+            android:layout_alignBottom="@+id/ECONOMYENDID"
+            android:layout_toLeftOf="@+id/seatsRemainingEndID"
+            android:layout_toStartOf="@+id/seatsRemainingEndID" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Total price:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView61"
+        android:layout_above="@+id/cancelID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="ATH"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/destinationAirportGoID"
+        android:layout_alignBaseline="@+id/DestinationAirportTextViewGoID"
+        android:layout_alignBottom="@+id/DestinationAirportTextViewGoID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Destination airport:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DestinationAirportTextViewGoID"
+        android:layout_alignBaseline="@+id/originAirportGoID"
+        android:layout_alignBottom="@+id/originAirportGoID"
+        android:layout_toLeftOf="@+id/destinationAirportGoID"
+        android:layout_toStartOf="@+id/destinationAirportGoID" />
+
+    <TextView
+        android:text="19"
+        android:textColor="#3B5998"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seatsRemainingGoID"
+        android:layout_alignBaseline="@+id/SeatsRemainingTextViewGoID"
+        android:layout_alignBottom="@+id/SeatsRemainingTextViewGoID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Seats remaining:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeatsRemainingTextViewGoID"
+        android:layout_alignBaseline="@+id/ECONOMYGOID"
+        android:layout_alignBottom="@+id/ECONOMYGOID"
+        android:layout_toLeftOf="@+id/seatsRemainingGoID"
+        android:layout_toStartOf="@+id/seatsRemainingGoID" />
+
+</RelativeLayout>
